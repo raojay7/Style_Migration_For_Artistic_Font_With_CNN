@@ -84,6 +84,9 @@ def char_to_picture(text="", font_name="宋体", background_color=(255,255,255),
         font_name = "SIMFANG.ttf"
 
     # 取得字体文件的位置
+    #font_dir = "/Library/Fonts" + font_name
+    #font_dir = "C:\Windows\Fonts\\" + font_name
+
     font_dir = "/usr/share/fonts/" + font_name
     font_size = int(pictrue_size * 0.8 / len(text)) # 设定文字的大小
     font = ImageFont.truetype(font_dir, font_size)
